@@ -14,7 +14,11 @@ public class ChainTester extends JPanel implements Runnable {
 		setBackground(Color.WHITE);
 		setPreferredSize(new Dimension(800, 800));
 		
-		chain = new Chain(100, 100, 100, 10, 10);
+		chain = new Rope(100, 100, 20, 20, 10);
+		//chain.get(2).addAttatchment(new Foot(chain.get(2), -Math.PI/6, 40, 80));
+		//chain.get(2).addAttatchment(new Foot(chain.get(2), Math.PI/6, 40, 80));
+		//chain.get(6).addAttatchment(new Foot(chain.get(6), -Math.PI/6, 40, 80));
+		//chain.get(6).addAttatchment(new Foot(chain.get(6), Math.PI/6, 40, 80));
 		
 		new Thread(this).start();
 	}
